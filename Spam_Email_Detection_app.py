@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 
 def load_model_and_vectorizer():
-    model = joblib.load(r"C:\Users\SYED OMER HUSSAINI\OneDrive\Desktop\TECHZONE\Trained Models\Spam_Email_Detection\Spam_Email_Detection_model.h5")
-    vectorizer = joblib.load(r"C:\Users\SYED OMER HUSSAINI\OneDrive\Desktop\TECHZONE\Trained Models\Spam_Email_Detection\vectorizer.h5")
+    model = joblib.load(r"Spam_Email_Detection_model.h5")
+    vectorizer = joblib.load(r"vectorizer.h5")
     return model, vectorizer
 
 def predict_email(message):
